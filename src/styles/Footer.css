@@ -1,0 +1,120 @@
+.footer {
+  background: #2b1a12;
+  border-top: 1px solid rgba(198, 138, 62, 0.25);
+  padding: 3rem 0 1.5rem;
+}
+
+/* Top divider with coffee cup motif */
+.footer-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto 2.5rem;
+}
+
+.footer-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(198, 138, 62, 0.5), transparent);
+}
+
+.footer-divider-cup {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(198, 138, 62, 0.12);
+  border: 1px solid rgba(198, 138, 62, 0.35);
+  color: #c68a3e;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.footer-section h4 {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  color: #c68a3e;
+}
+
+.footer-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  color: #fdfaf4;
+}
+
+.footer-desc,
+.footer-contact li,
+.footer-hours li {
+  color: #c9bfae;
+  margin: 0.55rem 0;
+}
+
+.footer-links,
+.footer-contact,
+.footer-hours {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li,
+.footer-hours li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #c9bfae;
+}
+
+.footer-links a:hover {
+  color: #c68a3e;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(253, 250, 244, 0.15);
+  background: rgba(253, 250, 244, 0.06);
+  color: #c68a3e;
+}
+
+.footer-social a:hover {
+  background: rgba(198, 138, 62, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  color: #c9bfae;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

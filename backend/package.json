@@ -1,0 +1,21 @@
+{
+  "name": "coffee-website-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Brew Bliss Coffee Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "nodemailer": "^9.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "messages": [
+    {
+      "id": 1791128794818,
+      "name": "Test User",
+      "email": "test@example.com",
+      "message": "Hello cafe",
+      "createdAt": "2026-10-04T15:46:34.818Z"
+    },
+    {
+      "id": 1791128831941,
+      "name": "Test User",
+      "email": "test@example.com",
+      "message": "Hello cafe",
+      "createdAt": "2026-10-04T15:47:11.941Z"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Classic Espresso",
+      "desc": "Double shot of our signature blend",
+      "price": 3.5,
+      "emoji": "☕",
+      "category": "espresso",
+      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Arabica espresso beans",
+        "Filtered water"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Espresso Macchiato",
+      "desc": "Espresso with a dollop of foam",
+      "price": 4,
+      "emoji": "☕",
+      "category": "espresso",
+      "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Arabica espresso beans",
+        "Steamed milk foam",
+        "Filtered water"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Espresso Con Panna",
+      "desc": "Espresso topped with whipped cream",
+      "price": 4.5,
+      "emoji": "☕",
+      "category": "espresso",
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Arabica espresso beans",
+        "Whipped cream",
+        "Vanilla extract",
+        "Filtered water"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cold Brew",
+      "desc": "24-hour steeped, ultra-smooth",
+      "price": 5,
+      "emoji": "🧊",
+      "category": "cold",
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Cold brew coffee grounds",
+        "Filtered water",
+        "Ice"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Nitro Cold Brew",
+      "desc": "Cold brew infused with nitrogen",
+      "price": 6,
+      "emoji": "🧊",
+      "category": "cold",
+      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Cold brew coffee",
+        "Nitrogen gas",
+        "Filtered water"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cold Brew Latte",
+      "desc": "Cold brew with oat milk",
+      "price": 5.5,
+      "emoji": "🥛",
+      "category": "cold",
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Cold brew coffee",
+        "Oat milk",
+        "Ice",
+        "Simple syrup"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Caramel Macchiato",
+      "desc": "Vanilla and caramel layered latte",
+      "price": 6,
+      "emoji": "🍮",
+      "category": "specialty",
+      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Espresso",
+        "Steamed milk",
+        "Vanilla syrup",
+        "Caramel sauce"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mocha Delight",
+      "desc": "Rich chocolate and espresso",
+      "price": 6.5,
+      "emoji": "🍫",
+      "category": "specialty",
+      "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Espresso",
+        "Steamed milk",
+        "Dark chocolate ganache",
+        "Whipped cream",
+        "Cocoa powder"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Lavender Latte",
+      "desc": "Floral notes with steamed milk",
+      "price": 6.5,
+      "emoji": "🌸",
+      "category": "specialty",
+      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Espresso",
+        "Steamed oat milk",
+        "Lavender syrup",
+        "Dried lavender buds"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Cinnamon Roll",
+      "desc": "Freshly baked, cream cheese icing",
+      "price": 4.5,
+      "emoji": "🥐",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Cinnamon",
+        "Brown sugar",
+        "Cream cheese",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Blueberry Muffin",
+      "desc": "Made with fresh blueberries",
+      "price": 4,
+      "emoji": "🧁",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Flour",
+        "Fresh blueberries",
+        "Sugar",
+        "Butter",
+        "Eggs",
+        "Vanilla extract"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Croissant",
+      "desc": "Buttery, flaky perfection",
+      "price": 3.5,
+      "emoji": "🥐",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1623334044303-241021148842?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Flour",
+        "French butter",
+        "Yeast",
+        "Milk",
+        "Sugar",
+        "Salt"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Everything Bagel",
+      "desc": "Toasted bagel with cream cheese",
+      "price": 3.5,
+      "emoji": "🥯",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Bagel dough",
+        "Sesame seeds",
+        "Poppy seeds",
+        "Cream cheese"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sourdough Loaf",
+      "desc": "Artisan sourdough, crusty & chewy",
+      "price": 6,
+      "emoji": "🍞",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Sourdough starter",
+        "Organic flour",
+        "Water",
+        "Sea salt"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Chocolate Chip Cookie",
+      "desc": "Soft-baked with dark chocolate chips",
+      "price": 3,
+      "emoji": "🍪",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Butter",
+        "Brown sugar",
+        "Dark chocolate chips",
+        "Flour",
+        "Eggs",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Glazed Donut",
+      "desc": "Classic yeast donut with sweet glaze",
+      "price": 3,
+      "emoji": "🍩",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Yeast dough",
+        "Powdered sugar",
+        "Milk",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Fudgy Brownie",
+      "desc": "Rich, dense, and extra chocolatey",
+      "price": 3.5,
+      "emoji": "🍫",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Dark chocolate",
+        "Butter",
+        "Cocoa powder",
+        "Eggs",
+        "Sugar",
+        "Flour"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Banana Bread",
+      "desc": "Moist loaf with toasted walnuts",
+      "price": 4,
+      "emoji": "🍌",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Ripe bananas",
+        "Flour",
+        "Butter",
+        "Walnuts",
+        "Brown sugar",
+        "Eggs"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Apple Pie Slice",
+      "desc": "Flaky crust with spiced apples",
+      "price": 4.5,
+      "emoji": "🥧",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1562007908-17c67e878c88?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Granny Smith apples",
+        "Butter",
+        "Cinnamon",
+        "Nutmeg",
+        "Pie crust",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Cheddar Scone",
+      "desc": "Savory scone with sharp cheddar",
+      "price": 4,
+      "emoji": "🧀",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1610614819513-58e34989848b?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Flour",
+        "Sharp cheddar",
+        "Butter",
+        "Heavy cream",
+        "Chives",
+        "Baking powder"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Chocolate Croissant",
+      "desc": "Flaky croissant filled with dark chocolate",
+      "price": 4,
+      "emoji": "🥐",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400&h=300&fit=crop",
+      "ingredients": [
+        "French butter",
+        "Dark chocolate",
+        "Flour",
+        "Yeast",
+        "Milk",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Almond Croissant",
+      "desc": "Buttery croissant with almond frangipane",
+      "price": 4.5,
+      "emoji": "🥐",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=300&fit=crop",
+      "ingredients": [
+        "French butter",
+        "Almond paste",
+        "Flour",
+        "Sliced almonds",
+        "Powdered sugar"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Classic Baguette",
+      "desc": "Crusty French baguette, baked daily",
+      "price": 5,
+      "emoji": "🥖",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=400&h=300&fit=crop",
+      "ingredients": [
+        "French flour",
+        "Water",
+        "Sea salt",
+        "Yeast"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Cinnamon Sugar Donut",
+      "desc": "Fresh donut rolled in cinnamon sugar",
+      "price": 3,
+      "emoji": "🍩",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Yeast dough",
+        "Cinnamon",
+        "Sugar",
+        "Butter"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Chocolate Glazed Donut",
+      "desc": "Yeast donut with glossy chocolate glaze",
+      "price": 3.5,
+      "emoji": "🍩",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Yeast dough",
+        "Dark chocolate",
+        "Cocoa powder",
+        "Sugar",
+        "Milk"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Blueberry Bagel",
+      "desc": "Soft bagel studded with blueberries",
+      "price": 3.5,
+      "emoji": "🥯",
+      "category": "bakery",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Blueberry_bagel_crumbles.jpg/500px-Blueberry_bagel_crumbles.jpg",
+      "ingredients": [
+        "Bagel dough",
+        "Fresh blueberries",
+        "Honey",
+        "Cream cheese"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Garlic Bread",
+      "desc": "Toasted bread with garlic butter & herbs",
+      "price": 4.5,
+      "emoji": "🧄",
+      "category": "bakery",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Garlicbread.jpg/500px-Garlicbread.jpg",
+      "ingredients": [
+        "Sourdough loaf",
+        "Garlic",
+        "Butter",
+        "Parsley",
+        "Parmesan"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Soft Pretzel",
+      "desc": "Warm pretzel with flaky sea salt",
+      "price": 3.5,
+      "emoji": "🥨",
+      "category": "bakery",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Flavored_soft_pretzels.jpg/500px-Flavored_soft_pretzels.jpg",
+      "ingredients": [
+        "Pretzel dough",
+        "Butter",
+        "Sea salt",
+        "Baking soda"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Carrot Cake Slice",
+      "desc": "Spiced cake with cream cheese frosting",
+      "price": 5,
+      "emoji": "🥕",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Carrots",
+        "Walnuts",
+        "Cream cheese",
+        "Cinnamon",
+        "Flour",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Red Velvet Cake",
+      "desc": "Velvety red cake with cream cheese icing",
+      "price": 6,
+      "emoji": "🍰",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Cocoa powder",
+        "Buttermilk",
+        "Cream cheese",
+        "Red food color",
+        "Flour",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "New York Cheesecake",
+      "desc": "Classic dense cheesecake with graham crust",
+      "price": 6.5,
+      "emoji": "🍰",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Cream cheese",
+        "Graham crackers",
+        "Butter",
+        "Eggs",
+        "Sugar",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Lemon Tart",
+      "desc": "Tangy lemon curd in a buttery tart shell",
+      "price": 4.5,
+      "emoji": "🍋",
+      "category": "pastry",
+      "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Lemon curd",
+        "Butter",
+        "Flour",
+        "Sugar",
+        "Eggs"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Tiramisu",
+      "desc": "Layered espresso-soaked mascarpone dessert",
+      "price": 5.5,
+      "emoji": "🍰",
+      "category": "bakery",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Tiramisu_dessert.jpg/500px-Tiramisu_dessert.jpg",
+      "ingredients": [
+        "Mascarpone",
+        "Espresso",
+        "Ladyfingers",
+        "Cocoa powder",
+        "Eggs",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Macaron Box",
+      "desc": "Assorted French macarons (6 pieces)",
+      "price": 6,
+      "emoji": "🧁",
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=400&h=300&fit=crop",
+      "ingredients": [
+        "Almond flour",
+        "Egg whites",
+        "Sugar",
+        "Buttercream",
+        "Fruit puree"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1785474549156,
+      "items": [
+        {
+          "id": 2,
+          "name": "Espresso Macchiato",
+          "desc": "Espresso with a dollop of foam",
+          "price": 4,
+          "emoji": "☕",
+          "category": "espresso",
+          "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&h=300&fit=crop",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 4,
+      "tax": 0.32,
+      "total": 4.32,
+      "status": "confirmed",
+      "createdAt": "2026-07-31T05:09:09.156Z"
+    }
+  ]
+}

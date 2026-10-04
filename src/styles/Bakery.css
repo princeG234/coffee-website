@@ -1,0 +1,252 @@
+.bakery-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+
+.bakery-hero-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bakery-hero::before,
+.bakery-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.75;
+}
+
+.bakery-hero::before {
+  width: 360px;
+  height: 360px;
+  background: rgba(210, 159, 82, 0.18);
+  top: -8rem;
+  right: -6rem;
+}
+
+.bakery-hero::after {
+  width: 420px;
+  height: 420px;
+  background: rgba(200, 146, 74, 0.12);
+  bottom: -8rem;
+  left: -4rem;
+}
+
+.bakery-hero-emoji {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 3rem;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bakery-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.bakery-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: rgba(184, 115, 51, 0.12);
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.4rem;
+}
+
+.bakery-hero-title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 0.95;
+}
+
+.bakery-hero-desc {
+  margin: 1.5rem 0 2rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 36rem;
+}
+
+.bakery-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bakery-page {
+  background: transparent;
+}
+
+.bakery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.bakery-filter-btn {
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.bakery-filter-btn.active,
+.bakery-filter-btn:hover {
+  background: rgba(210, 159, 82, 0.14);
+  color: var(--primary);
+}
+
+.bakery-filter-btn.active {
+  background: #1e1815;
+  color: #fbf7ee;
+}
+
+.bakery-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+}
+
+.bakery-card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.bakery-card-image img {
+  transition: transform 0.5s ease;
+  border-radius: 1.5rem;
+}
+
+.bakery-card:hover .bakery-card-image img {
+  transform: scale(1.06);
+}
+
+.bakery-card-info {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.bakery-card-info a {
+  width: fit-content;
+}
+
+.bakery-fav-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform var(--transition), color var(--transition), background var(--transition);
+}
+
+.bakery-fav-btn:hover {
+  transform: scale(1.08);
+  color: var(--primary);
+}
+
+.bakery-fav-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  border-color: transparent;
+}
+
+.bakery-card-btn {
+  background: #4a3226;
+  color: #FDFBF7;
+  box-shadow: 0 8px 20px rgba(74, 50, 38, 0.3);
+}
+
+.bakery-card-btn:hover {
+  background: #2a1c14;
+  color: #FDFBF7;
+  box-shadow: 0 12px 26px rgba(42, 28, 20, 0.38);
+}
+
+.bakery-card-btn.added {
+  background: #4f8a5f;
+  color: #fff;
+}
+
+.bakery-empty {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.bakery-empty p {
+  margin: 0;
+}
+
+.bakery-cta {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.bakery-cta h3 {
+  margin: 0 0 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+}
+
+.bakery-cta p {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 680px) {
+  .bakery-hero-content {
+    padding: 2rem;
+  }
+
+  .bakery-hero {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .bakery-hero-title {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
+
+  .bakery-hero-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,236 @@
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.admin-stat-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(184, 115, 51, 0.12);
+  color: var(--primary);
+}
+
+.admin-stat div {
+  display: grid;
+}
+
+.admin-stat strong {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.admin-stat span:not(.admin-stat-icon) {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.admin-filter {
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.admin-filter.active,
+.admin-filter:hover {
+  background: rgba(184, 115, 51, 0.12);
+  color: var(--primary);
+}
+
+.admin-empty {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+}
+
+.admin-empty p {
+  margin: 0;
+}
+
+.admin-empty h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: var(--text);
+}
+
+.admin-orders {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.admin-order {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.admin-order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.25rem 1.5rem;
+  background: rgba(184, 115, 51, 0.08);
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-order-id {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.admin-order-id span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.admin-order-status.confirmed {
+  background: rgba(79, 138, 95, 0.14);
+  color: var(--success);
+}
+
+.admin-order-status.onway {
+  background: rgba(184, 115, 51, 0.14);
+  color: var(--accent);
+}
+
+.admin-order-body {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.admin-order-section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.admin-order-section h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admin-order-section p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.admin-order-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.admin-order-item {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(184, 115, 51, 0.12);
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.admin-payment-detail {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.admin-delivery {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  color: var(--text-muted) !important;
+  font-size: 0.85rem !important;
+}
+
+.admin-order-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.admin-order-notes {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.admin-order-total {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.admin-order-total span {
+  color: var(--text-muted);
+}
+
+.admin-order-total strong {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-order-body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .admin-order-body {
+    grid-template-columns: 1fr;
+  }
+}
