@@ -74,15 +74,15 @@ const smtpConfigured = Boolean(process.env.SMTP_USER && process.env.SMTP_PASS);
 
 const transporter = smtpConfigured
   ? nodemailer.createTransport({
-      service: process.env.SMTP_SERVICE || (process.env.SMTP_HOST ? undefined : 'gmail'),
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: Number(process.env.SMTP_PORT) === 465 || !process.env.SMTP_PORT,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS ? process.env.SMTP_PASS.replace(/\s+/g, '') : '',
-      },
-    })
+    service: process.env.SMTP_SERVICE || (process.env.SMTP_HOST ? undefined : 'gmail'),
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: Number(process.env.SMTP_PORT) || 465,
+    secure: Number(process.env.SMTP_PORT) === 465 || !process.env.SMTP_PORT,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS ? process.env.SMTP_PASS.replace(/\s+/g, '') : '',
+    },
+  })
   : null;
 
 // In-memory OTP store: email -> { otp, expiresAt, verified }
@@ -196,7 +196,7 @@ const DATA_FILE = path.join(__dirname, 'data.json');
 
 // Initialize data file if it doesn't exist
 if (!fs.existsSync(DATA_FILE)) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify({ 
+  fs.writeFileSync(DATA_FILE, JSON.stringify({
     messages: [],
     menuItems: [
       { id: 1, name: "Classic Espresso", desc: "Double shot of our signature blend", price: 3.50, emoji: "☕", category: "espresso" },
@@ -255,12 +255,12 @@ app.get('/api/menu', (req, res) => {
   try {
     const data = readData();
     const { category } = req.query;
-    
+
     let items = data.menuItems;
     if (category && category !== 'all') {
       items = items.filter(item => item.category === category);
     }
-    
+
     res.json({ success: true, data: items });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
@@ -271,12 +271,12 @@ app.get('/api/menu', (req, res) => {
 app.post('/api/contact', contactLimiter, (req, res) => {
   try {
     const { name, email, message } = req.body;
-    
+
     // Validation
     if (!name || !email || !message) {
-      return res.status(400).json({ 
-        success: false, 
-        message: 'All fields are required' 
+      return res.status(400).json({
+        success: false,
+        message: 'All fields are required'
       });
     }
 
@@ -290,7 +290,7 @@ app.post('/api/contact', contactLimiter, (req, res) => {
     }
 
     const data = readData();
-    
+
     const newMessage = {
       id: Date.now(),
       name: sanitizeText(name),
@@ -302,8 +302,8 @@ app.post('/api/contact', contactLimiter, (req, res) => {
     data.messages.push(newMessage);
     writeData(data);
 
-    res.status(201).json({ 
-      success: true, 
+    res.status(201).json({
+      success: true,
       message: 'Message sent successfully!',
       data: newMessage
     });
